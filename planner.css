@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
+* body{
+    margin: 0px;
+    margin-top: 0px;
+    font-family: cabin;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+li {
+    float: left;
+  }
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+.container {
+    height: 1100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navmenu{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.navlink {
+    background-color:rgba(253, 251, 251, 0);
+    color: black;
+}
+
+.rodapelink{
+    background-color:rgba(253, 251, 251, 0);
+    color: rgb(248, 246, 246);
+}
+
+.navitem {
+    display: float;
+}
+
+.logo {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.titulo {
+    font-size: xx-large;
+    margin-top: 290px;
+    margin-left: 150px;
+}
+
+.hero {
+    background-image: url("hero-background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.servicos {
+    padding: 150px;
+    height: 1000px;
+}
+
+.servico {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    max-height: 400px;
+}
+
+.item-servico {
+    width: 50%;
+}
+
+.img-servico {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.txt-servico {
+    padding: 50px;
+}
+
+.rodape {
+    background-color: rgb(47, 47, 63);
+    height: 400px;
+    padding: 10px;
+    color: white;
+}
+
+.fundo-logo-rodape {
+    background-color: rgb(179, 179, 192);
+    margin-top: 8px;
+    width: 140px;
+}
+
+.imput-control {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border-width:thin;    
+    margin-bottom: 10px;
+}
+
+.contato {
+    margin-top: 150px;
+
+    padding-top: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color:#E7E9F5;
+    height: 450px;
+}
+
+.button-div {
+    display:flex; justify-content: flex-end;    
+}
+
+.button-enviar {
+    height:50px; 
+    width:170px; 
+    background-color:#2F2F3F; 
+    color:white;
+    border-radius: 10px;
+}
+
+.button-enviar:hover {
+    background-color: #7d7db1; /* Green */
+    color: white;
+}
+
+.rodape-coluna {
+    display: flex;
+    flex-direction: column;
+}

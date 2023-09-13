@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
+<head>
+  <link rel="stylesheet" href="planner.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+  <script src="planner.js"></script>
+
+</head>
+
+<body>
+    <section>
+        <div class="container hero" id="hero">
+
+          <div class="navbar">
+
+            <div class="navitem logo">
+              <img src="plannerti_logo.png" width="140" height="50">
+            </div>
+
+            <div class="navmenu">
+              <ul>
+                <li><a href="#hero" class="navlink">Home</a></li>
+                <li><a href="#servicos" class="navlink">Serviços</a></li>
+                <li><a href="#form_contato" class="navlink">Contato</a></li>
+                <li><a href="#servicos" class="navlink">Quem somos</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="titulo">
+            <h1>Desenvolvimento de <br>software profissional</h1>
+          </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="container servicos">
+        <div class="servico">
+          <div class="item-servico">
+            <img class="img-servico" src="experiencia-min.jpg">
+          </div>
+          <div  class="item-servico txt-servico">
+            <h1>
+              EXPERIÊNCIA COMPROVADA
+            </h1>
+            Criada em 2009 como uma companhia de software focada em desenvolvimento de aplicações, a PlannerTi tem mais de 20 anos atuando neste mercado. Nosso objetivo é produzir software de qualidade que atenda as necessidades de nossos clientes.
+          </div>
+        </div>
+
+        <div class="servico">
+          <div class="item-servico txt-servico">
+
+            <h1>
+              ALOCAÇAÕ DE RECURSOS
+            </h1>
+
+            Aloque as pessoas certas para os projetos certos na hora certa e ajuste capacidades quando necessário.
+          </div>
+          <div class="item-servico">
+            <img class="img-servico" src="office-min.jpg">
+          </div>
+        </div>
+
+        <div class="servico">
+          <div class="item-servico">
+            <img class="img-servico" src="inovacao-min.jpg">
+          </div>
+          <div class="item-servico txt-servico">
+            <h1>
+              INOVAÇÃO SOB DEMANDA
+            </h1>
+            
+            Nós somos uma empresa de tecnologia que almeja entregar aplicações de negócios de alta qualidade, com uma equipe que busca resolver problemas complexos!
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id = "form_contato" class="container contato">
+
+      <div>
+
+        <h1>
+          ENTRE EM CONTATO
+        </h1>
+
+        <div>
+          <label>E-mail</label>
+          <input id="emailContato" class="imput-control">
+        </div>
+
+        <div>
+          <label>Nome</label>
+          <input id="nomeContato" class="imput-control">
+        </div>
+        
+        <div>
+          <label>Telefone - opcional</label>
+          <input id="telefoneContato" class="imput-control">
+        </div>
+
+        <div>
+          <label>Comentário</label>
+          <textarea id="comentarioContato" class="imput-control" rows="8" cols="50">
+            </textarea>
+        </div>
+  
+        <div class="button-div">
+          <button id="enviarContato" class="button-enviar">Enviar</button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+      <div class="container rodape">
+
+        <div class="navitem logo fundo-logo-rodape">
+          <img src="plannerti_logo.png" width="140" height="50">
+        </div>
+
+        <div style="display: flex;justify-content: space-around; margin-left: 100px;margin-right: 100px;">
+          <div class="rodape-coluna">
+            <a href="#servicos" class="rodapelink">Empresa</a>
+            <br>
+            <a href="#servicos" class="rodapelink">Conheça nossa historia</a>
+            <br>
+            <a href="#form_contato" class="rodapelink">Entre em contato</a>
+          </div>
+  
+        <div class="rodape-coluna">
+          <span>Entre em contato</span>
+          <br>
+          <span>contato@plannerti.com.br</span>
+          <br>
+          <span>55 11 976512927</span>
+          <br>
+      </div>
+  
+      <div class="rodape-coluna">
+        <span>Mantenha-se informado</span>
+        <br>
+        <span>contato@plannerti.com.br</span>
+        <br>
+      </div>
+  
+        </div>
+
+      </div>
+    </section>
+
+    <script>
+
+      var _planner = new plannerModule();
+
+      $(document).ready(function () {
+
+        $("#enviarContato").click(function(){_planner.enviarMensagem()})
+
+      });
+
+
+  </script>
+</body>
+
+</html>
